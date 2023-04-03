@@ -1,0 +1,27 @@
+
+<form [formGroup]="contactForm" (ngSubmit)="submit()">
+   <label>
+    Name
+    <input type="text" formControlName="name">
+</label>
+<app-forms-errors *ngIf="isSubmit" [controls]="contactForm.controls" [key]="'name'"></app-forms-errors>
+<label>
+    Email
+    <input type="email" formControlName="email">
+</label>
+<app-forms-errors *ngIf="isSubmit" [controls]="contactForm.controls" [key]="'email'"></app-forms-errors>
+
+<label>
+    Age
+    <input type="number" formControlName="age">
+</label>
+<app-forms-errors *ngIf="isSubmit" [controls]="contactForm.controls" [key]="'age'"></app-forms-errors>
+
+<label>
+    Description
+    <input type="text" formControlName="description">
+</label> 
+<app-forms-errors *ngIf="isSubmit" [controls]="contactForm.controls" [key]="'description'"></app-forms-errors>
+
+<button>Enviar</button>
+</form>

@@ -1,0 +1,9 @@
+<div class="galery">
+    <app-pagination (newPage)="getPage($event)"></app-pagination> 
+   <ul class="galery--list">
+        <li *ngFor="let item of characters">
+            <app-card [item]="item"></app-card>
+        </li>
+    </ul>
+</div>
+

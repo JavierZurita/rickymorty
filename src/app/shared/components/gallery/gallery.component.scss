@@ -1,0 +1,16 @@
+.galery{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    align-items: center;
+    padding-top: 50px;
+        .galery--list{
+        
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        list-style: none;
+        padding-top: 50px;
+    }
+}

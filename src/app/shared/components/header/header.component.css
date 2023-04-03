@@ -1,0 +1,13 @@
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+.navbar a:visited {
+  text-decoration: none;
+  color: black;
+}/*# sourceMappingURL=header.component.css.map */

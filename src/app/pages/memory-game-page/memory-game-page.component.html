@@ -1,0 +1,14 @@
+<div class="all">
+   <div class="galery">
+        <div *ngFor="let item of planetsRandom; let index" class="card--div">
+            <app-image *ngIf="!item.selected && !item.checked" [url]="'assets/universe.svg'" [class]="'card'" (click)="show(index)"></app-image>
+            <app-image *ngIf="item.selected" [url]="item.img" [class]="'card'"></app-image>
+            <app-image *ngIf="item.checked" [url]="'assets/tick.svg'" [class]="'card'"></app-image>
+        </div>
+        
+    </div>
+    <div class="info">
+        <p>Numero de intentos: {{cont}}</p>
+        <button (click)="reset()">Reset</button>  
+    </div> 
+</div>
